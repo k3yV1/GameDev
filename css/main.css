@@ -17,17 +17,15 @@ body {
   top: -1px;
 }
 
-.header {
-  background-image: url("../image/header.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 85px 0 0 0;
+.header img {
+  width: 100%;
 }
 
-.tabContainer {
-  width: 980px;
+.container {
+  max-width: 980px;
   margin: 0 auto;
 }
+
 .tabContainer .tabContainer__tabButtons {
   display: flex;
   justify-content: space-between;
@@ -170,6 +168,12 @@ input[type=radio]:checked + .tab-control {
 
 [hidden] {
   display: none;
+}
+
+@media screen and (min-width: 3570px) {
+  .bodySection {
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
