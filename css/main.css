@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #000 !important;
+}
+
+.bodySection {
+  background-image: url("../image/mainBackround.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+}
+
+.header {
+  background-image: url("../image/header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 85px 0 0 0;
+}
+
+.tabContainer {
+  width: 980px;
+  margin: 0 auto;
+}
+.tabContainer .tabContainer__tabButtons {
+  display: flex;
+  justify-content: space-between;
+}
+.tabContainer .tabContainer__tabButtons .btn {
+  padding: 15px 30px;
+  background-color: #323145;
+  border-radius: 10px 10px 0 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+}
+.tabContainer .tabContainer__tabButtons .btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.tabContainer__content {
+  background: #242333;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 10px 10px;
+}
+.tabContainer__content .tabContainer__title, .tabContainer__content .coinNezer__title {
+  text-align: center;
+}
+.tabContainer__content .tabContainer__title .title, .tabContainer__content .coinNezer__title .title {
+  font-size: 30px;
+  line-height: 37px;
+  color: #fff;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__monsterBox, .tabContainer__content .tabContainer__tabContent .coinNezer__itemContainer, .tabContainer__content .coinNezer__container .tabContainer__monsterBox, .tabContainer__content .coinNezer__container .coinNezer__itemContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem, .tabContainer__content .coinNezer__container .tabContainer__tabItem {
+  position: relative;
+  background-image: url("../image/card.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px;
+  justify-content: space-around;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__xCoin, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__xCoin {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__count, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__count {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__count .count, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__count .count {
+  font-size: 30px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__count .count__title, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__count .count__title {
+  color: #fff;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__button, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__button {
+  margin-bottom: 15px;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__button button, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__button button {
+  background: linear-gradient(90deg, #242333 0%, #3C3B53 100%);
+  border-radius: 146px;
+  padding: 10px 30px;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__button button .buy, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__button button .buy {
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin-right: 5px;
+}
+.tabContainer__content .tabContainer__tabContent .tabContainer__tabItem .tabContainer__button button dtl, .tabContainer__content .coinNezer__container .tabContainer__tabItem .tabContainer__button button dtl {
+  color: #21CC14;
+  margin-right: 4px;
+}
+.tabContainer__content .tabContainer__monsterCoin span {
+  font-size: 32px;
+  color: #fff;
+}
+
+.tabs {
+  width: 980px;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+}
+
+.tab-control {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  padding: 15px 38.27px;
+  background-color: #323145;
+  color: #9794C6;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  border-radius: 10px 10px 0 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.tab-control:hover {
+  color: #fff;
+}
+
+.tab-panel {
+  display: none;
+}
+
+input[type=radio]:checked + .tab-control {
+  color: #fff;
+  border-bottom-color: #ed1e79;
+}
+
+#tab-1:checked ~ .tab-content > #tab-panel-1 {
+  display: block;
+}
+
+#tab-2:checked ~ .tab-content > #tab-panel-2 {
+  display: block;
+}
+
+#tab-3:checked ~ .tab-content > #tab-panel-3 {
+  display: block;
+}
+
+#tab-4:checked ~ .tab-content > #tab-panel-4 {
+  display: block;
+}
+
+#tab-5:checked ~ .tab-content > #tab-panel-5 {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
